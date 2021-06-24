@@ -166,7 +166,7 @@ public class AnuncioDaoMySQL extends AnuncioDao {
         ArrayList<Anuncio> registros = new ArrayList<Anuncio>();
         try {
             Conexion objConexion = Conexion.getOrCreate();
-            String query = "SELECT * FROM anuncio WHERE categoria = 'Inmuebles'";
+            String query = "SELECT * FROM anuncio WHERE categoria = 'Inmuebles' AND estado = '1'";
             ResultSet objResultSet = objConexion.ejecutar(query);
             while (objResultSet.next()) {
                 Anuncio obj = new Anuncio();
@@ -210,7 +210,7 @@ public class AnuncioDaoMySQL extends AnuncioDao {
         ArrayList<Anuncio> registros = new ArrayList<Anuncio>();
         try {
             Conexion objConexion = Conexion.getOrCreate();
-            String query = "SELECT * FROM anuncio WHERE categoria = 'Electronica'";
+            String query = "SELECT * FROM anuncio WHERE categoria = 'Electronica' AND estado = '1'";
             ResultSet objResultSet = objConexion.ejecutar(query);
             while (objResultSet.next()) {
                 Anuncio obj = new Anuncio();
@@ -254,7 +254,7 @@ public class AnuncioDaoMySQL extends AnuncioDao {
         ArrayList<Anuncio> registros = new ArrayList<Anuncio>();
         try {
             Conexion objConexion = Conexion.getOrCreate();
-            String query = "SELECT * FROM anuncio WHERE categoria = 'Vehiculos'";
+            String query = "SELECT * FROM anuncio WHERE categoria = 'Vehiculos' AND estado = '1'";
             ResultSet objResultSet = objConexion.ejecutar(query);
             while (objResultSet.next()) {
                 Anuncio obj = new Anuncio();
