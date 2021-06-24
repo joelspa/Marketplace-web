@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/login_signup/login.css">
+    <link rel="stylesheet" href="css/fontawesome.all.css">
+
+</head>
+
+<body>
+    <form class="form-signin">
+        <a href="index.html" id="back">
+            <i class="fas fa-arrow-left"></i> Volver
+        </a>
+
+        <div id="login">
+            <h1>Iniciar Sesión</h1>
+
+            <div id="user_txt">
+                <input type="text" id="InputUsername" placeholder="Ingrese su nombre de usuario" autofocus>
+                <span></span>
+            </div>
+
+            <div id="pass_txt">
+                <input type="password" id="InputPassword" placeholder="Ingrese su contraseña">
+                <span></span>
+            </div>
+
+            <div class="err-msg" id="validation-username">
+                Debe ingresar su nombre de usuario
+            </div>
+
+            <div class="err-msg" id="validation-password">
+                Debe Ingresar su contraseña
+            </div>
+
+            <div class="alert" id="msg-error-login" role="alert"></div>
+
+            <button class="btn" id="btn-login" type="button">Ingresar</button>
+
+            <p>¿No tiene una cuenta?
+                <a href="signup.html">Registrese aquí</a>
+            </p>
+        </div>
+    </form>
+
+    <script src="js/login.js"></script>
+
+
+</body>
+
+</html>

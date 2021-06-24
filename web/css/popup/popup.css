@@ -1,0 +1,60 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#popupBody {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d3d3d3;
+    width: 700px;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #393c42;
+    position: relative;
+    transition: all 5s ease-in-out;
+    margin: auto;
+    margin-top: 80px;
+}
+
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#popupBody img {
+    width: 600px;
+}
+
+#popupBody .card-item {
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #393c42;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: none;
+}
+
+.descripcion {
+    word-wrap: normal;
+}

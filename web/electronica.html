@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="css/fontawesome.all.css">
+    <link rel="stylesheet" href="css/principal/style.css">
+    <link rel="stylesheet" href="css/principal/head.css">
+    <link rel="stylesheet" href="css/principal/banner.css">
+    <link rel="stylesheet" href="css/principal/items.css">
+    <link rel="stylesheet" href="css/principal/footer.css">
+    <link rel="stylesheet" href="css/popup/popup.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+</head>
+
+<body onload="cargarItems()">
+    <form action="#">
+
+        <header>
+            <div class="header-content">
+                <div id="logo">
+                    <h1>T-Store</h1>
+                </div>
+
+                <nav id="main-menu">
+                    <label id="switch-label" for="menu-switch">
+                        <i class="fas fa-bars"></i>
+                        Menu
+                    </label>
+                    <input type="checkbox" id="menu-switch">
+
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span class="mn">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">categorías<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="inmuebles.html">Inmuebes</a></li>
+                                <li><a href="electronica.html">Electrónica</a></li>
+                                <li><a href="vehiculo.html">Vehículos</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <a href="perfil.html" id="perfil">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html" id="login">
+                                Iniciar Sesión
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signup.html" id="register">
+                                Registrarse
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner">
+            <div id="image-banner">
+                <img src="css/img/Marketplace.png" alt="Marketplace image">
+            </div>
+            <div id="text">
+                <h1>¡Encuentra lo que buscas aquí!</h1>
+                <p>Navega por las distinas categorías y encuentra lo que buscas al mejor precio</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Ultimos Productos</h1>
+
+
+            <div id="anuncios"></div>
+
+        </div>
+
+        <div class="footer">
+            <div id="info">
+                <h3>Marketplace Logo</h3>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            Preguntas frecuentes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Acerca de nosotros
+                        </a>
+                    </li>
+                </ul>
+                Copyright © 2021. All rights reserved.
+            </div>
+
+            <div id="redes">
+                <nav class="redes-footer">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/joelsebastian.paniaguaarias.3/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/index-sesionIniciada.js"></script>
+    <script src="js/electronica.js"></script>
+</body>
+
+</html>

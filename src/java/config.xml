@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<app-config>
+	<db-config>
+		<db-engine>MySQL</db-engine>
+		<db-host>localhost</db-host>
+		<db-port>3306</db-port>
+		<db-instance></db-instance>
+		<db-name>marketplace</db-name>
+		<db-user>root</db-user>
+		<db-password>root</db-password>
+	</db-config>
+</app-config>

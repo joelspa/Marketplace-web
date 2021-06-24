@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login_signup/login.css">
+    <link rel="stylesheet" href="css/fontawesome.all.css">
+</head>
+
+<body>
+    <form>
+        <a href="index.html" id="back">
+            <i class="fas fa-arrow-left"></i> Volver
+        </a>
+
+        <div id="register">
+            <h1>Registro</h1>
+        </div>
+
+        <div class="txt_field">
+            <input type="text" id="inputName" placeholder="Nombre Completo">
+            <span></span>
+        </div>
+
+        <div class="err-msg" id="validation-name">
+            Debe ingresar su Nombre Completo
+        </div>
+
+        <div class="txt_field">
+            <input type="text" id="inputUser" placeholder="Nombre de Usuario">
+            <span></span>
+        </div>
+
+        <div class="err-msg" id="validation-username">
+            Debe ingresar un nombre de usuario
+        </div>
+
+        <div class="txt_field">
+            <input type="mail" id="inputMail" placeholder="E-mail">
+            <span></span>
+        </div>
+
+        <div class="err-msg" id="validation-mail">
+            Debe ingresar un correo
+        </div>
+
+        <div class="txt_field">
+            <input type="password" id="inputPassword" placeholder="Contraseña">
+            <span></span>
+        </div>
+
+        <div class="err-msg" id="validation-password">
+            Debe ingresar una contraseña
+        </div>
+
+        <div class="txt_field">
+            <input type="password" id="inputPasswordTwo" placeholder="Repita su ontraseña">
+            <span></span>
+        </div>
+
+        <div class="err-msg" id="validation-password-two">
+            Vuelva a ingresar la contraseña
+        </div>
+
+        <div class="alert" id="error-signup" style="display: none" role="alert"></div>
+
+        <button id="btn-signup" class="btn" type="button">Registrarse</button>
+    </form>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

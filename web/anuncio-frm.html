@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/principal/style.css">
+    <link rel="stylesheet" href="css/principal/head.css">
+    <link rel="stylesheet" href="css/frm/frm.css">
+    <link rel="stylesheet" href="css/fontawesome.all.css">
+    <title>Anuncios</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div id="logo">
+                <h1>Mis anuncios</h1>
+            </div>
+
+            <nav id="main-menu">
+                <label id="switch-label" for="menu-switch">
+                    <i class="fas fa-bars"></i>
+                    Menu
+                </label>
+                <input type="checkbox" id="menu-switch">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="mn">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html" id="salir">
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div>
+                    <h1 id="page-title"></h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="volver">
+                    <a href="perfil.html">Volver a tu perfil</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <input type="hidden" id="anuncioId" value="0">
+                    <input type="hidden" id="imageFileId" value="0">
+
+                    <div>
+                        <label for="titulo">Titulo</label>
+                        <input type="text" id="titulo">
+                        <div id="validation-titulo" class="err-msg">
+                            El nombre del Contacto es requerido
+                        </div>
+                    </div>
+
+                    <div id="cat-container">
+                        <label for="categoria">Categoría</label>
+                        <select id="categoria">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="Inmuebles">
+                                Inmuebles
+                            </option>
+                            <option value="Vehiculos">
+                                Vehículos
+                            </option>
+                            <option value="Electronica">
+                                Electrónica
+                            </option>
+                        </select>
+
+                        <div id="validation-categoria" class="err-msg">
+                            La categoría es requerida
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="descripcion">Descripcion</label>
+                        <textarea type="text" id="descripcion"></textarea>
+                        <div id="validation-desc" class="err-msg">
+                            La descripción es requerida
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono">
+                        <div id="validation-telefono" class="err-msg">
+                            El número de teléfono es requerido
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="precio">Precio</label>
+                        <input type="text" id="precio">
+                        <div id="validation-precio" class="err-msg">
+                            El precio es requerido
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="status">Estado</label>
+                        <select id="status">
+                        <option disabled selected>Selecciona una opción</option>
+                        
+                        <option value="1">
+                            Publicar
+                        </option>
+
+                        <option value="0">
+                            No publicar
+                        </option>
+                    </select>
+                    </div>
+
+                    <div>
+                        <div class="contacto-img">
+                            <img src="img/foto.png" alt="User Image" id="image">
+                        </div>
+                        <input type="file" id="image-file">
+                    </div>
+
+
+
+                    <div class="botones">
+                        <input type="button" value='Guardar' id='btn-save'>
+                        <a href="perfil.html" class="cancelar">Cancelar</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="js/anuncio-frm.js"></script>
+</body>
+
+
+</html>

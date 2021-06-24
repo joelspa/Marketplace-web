@@ -1,0 +1,396 @@
+.header-content {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #24262B;
+    color: #D3D3D4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    padding-left: 10px;
+}
+
+#search-bar {
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#searchBar {
+    font-size: 10px;
+    width: 100%;
+    border: 3px solid #45464B;
+    border-right: none;
+    padding: 5px;
+    height: 10px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: #45464B;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#searchBar:focus {
+    color: #9A9A9A;
+}
+
+#searchButton {
+    height: 26px;
+    border: 1px solid #45464B;
+    background: #45464B;
+    text-align: center;
+    color: #9A9A9A;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#main-menu li {
+    list-style: none;
+    text-align: center;
+}
+
+#main-menu li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #D3D3D4;
+    font-size: 10px;
+    padding-left: 30px;
+    flex-direction: column;
+}
+
+#main-menu ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    margin: 10px 60px;
+}
+
+#main-menu li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #D3D3D4;
+}
+
+#main-menu i {
+    margin-left: 10px;
+}
+
+#main-menu {
+    font-size: 10px;
+    margin: 10px 0px;
+}
+
+#login,
+#register {
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    color: white;
+    font-size: 10px;
+}
+
+#login {
+    background: linear-gradient(45deg, #5C27FE, #C165DD);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#register {
+    background: linear-gradient(45deg, #1DE5E2, #B588F7);
+}
+
+#logo h1 {
+    font-size: 20px;
+}
+
+#main-menu select {
+    background-color: #24262B;
+    border: none;
+    color: #D3D3D4;
+    font-size: 10px;
+}
+
+#main-menu option {
+    color: #D3D3D4;
+    font-size: 15px;
+}
+
+#menu-switch {
+    display: none;
+}
+
+#main-menu ul {
+    display: none;
+}
+
+#menu-switch:checked+ul {
+    display: block;
+}
+
+.mn {
+    margin-bottom: 10px;
+}
+
+#main-menu>li {
+    float: left;
+}
+
+#main-menu li a {
+    background-color: #24262B;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 5px;
+    display: block;
+}
+
+#main-menu li a:hover {
+    background-color: #434343;
+}
+
+#main-menu li ul {
+    display: none;
+    position: absolute;
+    margin: 0px;
+}
+
+#main-menu li:hover>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-menu li ul li {
+    position: relative;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+#main-menu li a {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+#main-menu li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+#main-menu li ul {
+    background-color: #24262B;
+}
+
+#main-menu ul li ul a {
+    font-size: 15px;
+}
+
+@media (min-width: 420px) {
+    #main-menu ul {
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #main-menu {
+        margin: 10px 20px;
+    }
+    #main-menu ul {
+        display: block;
+    }
+    #switch-label {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #main-menu li {
+        display: inline-block;
+        margin-right: 0px;
+        color: #D3D3D4;
+    }
+    nav li a {
+        padding-left: 0px;
+    }
+    nav ul {
+        margin: 10px 10px;
+    }
+    #login,
+    #register {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: auto 10px;
+    }
+    #main-menu span {
+        margin-right: 5px;
+    }
+    #search-bar {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    #search-bar {
+        width: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    #main-menu {
+        font-size: 15px;
+        margin: 10px 30px;
+    }
+    #main-menu li ul {
+        background-color: #24262B;
+    }
+    #login,
+    #register {
+        font-size: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #logo h1 {
+        font-size: 30px;
+    }
+    #logo {
+        margin: auto 30px;
+    }
+    .searchTerm {
+        font-size: 15px;
+        height: 15px;
+    }
+    .searchButton {
+        height: 31px;
+        font-size: 15px;
+    }
+}
+
+
+/*
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24262B;
+    color: #D3D3D4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    padding-left: 20px;
+}
+
+#search-bar {
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #45464B;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: #45464B;
+}
+
+.searchTerm:focus {
+    color: #9A9A9A;
+}
+
+.searchButton {
+    height: 36px;
+    border: 1px solid #45464B;
+    background: #45464B;
+    text-align: center;
+    color: #9A9A9A;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #D3D3D4;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+#main-menu li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #D3D3D4;
+}
+
+#main-menu li>span:last-child {
+    margin-right: 20px;
+}
+
+#main-menu i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#main-menu {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#login,
+#register {
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+#login {
+    background: linear-gradient(45deg, #5C27FE, #C165DD);
+    margin-left: 20px;
+}
+
+#register {
+    background: linear-gradient(45deg, #1DE5E2, #B588F7);
+}
+
+#main-menu select {
+    background-color: #24262B;
+    border: none;
+    color: #D3D3D4;
+    font-size: 20px;
+}
+
+#main-menu option {
+    color: #D3D3D4;
+    font-size: 15px;
+}
+*/
